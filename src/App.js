@@ -1,7 +1,14 @@
 import React from "react";
+import Category from "./components/Category";
+import Pages from "./pages/Pages";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Category />
+      <Pages />
+    </div>
+  );
 };
 
 export default App;
