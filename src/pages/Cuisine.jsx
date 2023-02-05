@@ -18,7 +18,7 @@ const Cuisine = () => {
 
   useEffect(() => {
     getCuisine(params.type);
-  }, []);
+  }, [params.type]);
 
   return (
     <Grid>
