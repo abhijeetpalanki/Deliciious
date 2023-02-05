@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Nav>
-        <img src="/logo.png" alt="logo" />
-        <Logo to={"/"}>Delicious</Logo>
-      </Nav>
+      <Logo to={"/"}>
+        <Nav>
+          <img src="/logo.png" alt="logo" />
+          <span>delicious</span>
+        </Nav>
+      </Logo>
       <Search />
       <Category />
       <Pages />
@@ -21,20 +23,23 @@ const App = () => {
 
 const Logo = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Lobster Two", cursive;
 `;
 
 const Nav = styled.div`
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   img {
     height: 50px;
     width: 50px;
+  }
+
+  span {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Lobster Two", cursive;
   }
 `;
 
